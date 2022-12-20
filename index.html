@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./images/icon-location.svg"> -->
+  <link rel="stylesheet" href="style.css">
+  <!-- link the map leaflet stylesheet  -->
+  <link rel="stylesheet" href="./leaflet/leaflet.css">
+  <!-- link the leaflet script -->
+  <script src="./leaflet/leaflet-src.js"></script>
+  
+  <title>Frontend Mentor | IP Address Tracker</title>
+
+</head>
+
+<body>
+
+<main> 
+  <section class="container">
+  <header>
+ 
+    <h1 class="main-header"> IP Address Tracker</h1>
+    <form action="" class="form">
+
+      <div class="one"><input type="text" class="input" placeholder="  Search  for any IP address or domain"></div>
+      <div class="two">
+        <button class="click" > <img src="./images/icon-arrow.svg" alt="icon-arrow" class="arrow"> </button>
+      </div>
+    
+    </form>
+  </header>
+
+<div class="location-info">
+  <div class="location first">
+    <p class="addressname name">  IP Address</p>
+    <p class="address-ip result"> 192.212.174.101</p>
+  </div>
+  <div class="location">
+    <p class="location-name name">  Location</p>
+<div class="address">
+  <p class=" result"> <span class="city ">Brooklyn</span> ,<span class="region"> NY </span> 
+    <span class="country result">19991</span> </p>
+    <!-- <p class=" country result "> 19991</p> -->
+</div>
+  
+  </div> 
+  <div class="location">
+   <p class="time-zone name">  Timezone</p>
+   <p class="result"><span> UTC</span> <span class="time-value">-05:00</span> </p>
+  </div>
+  <div class="location">
+    <p class="ISP name">ISP </p>
+    <div class="address"> 
+      <p class=" isp-value result"> SpaceX Starlink </p>
+      <!-- <p class="result1 result"> Starlink</p> -->
+    </div>
+  </div>
+</div>
+ </section>
+ <!-- <div id="map"></div> -->
+ <section class="container1" id="map">
+
+ </section>
+ </main>  
+<script src="script.js"></script>
+</body>
+</html>

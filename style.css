@@ -1,0 +1,166 @@
+:root{
+--Very-Dark-Gray: hsl(0, 0%, 17%);
+--Dark-Gray: hsl(0, 0%, 59%);
+}
+*{
+   
+    padding:0;
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    width:100%;
+    height:100%;
+    padding:0;
+    margin: 0;
+    background-color:rgb(232, 223, 223) ;
+    background-image:url("./images/pattern-bg.png");
+    background-repeat:no-repeat ;
+ font-family:url("https://fonts.google.com/specimen/Rubik");
+ background-color:rgb(232, 223, 223) ;
+ background-color:rgb(232, 223, 223) ;
+
+}
+main{
+    text-align:center;
+  
+}
+
+header{
+    color:white;
+    margin: 1.5em 0em 1.5em 0em;
+
+}
+
+.container{
+  margin:1em;
+}
+@media only screen and (min-width:10px){
+
+    .main-header{
+        margin:1em;
+    }
+    form{
+        margin: 0 auto;
+        margin-bottom:1em;
+        display:flex;
+        width:90%;
+
+    }
+.input{
+    padding:1.2em;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border:none;
+     width:100%;
+     cursor:pointer;
+}
+.one{
+    flex:95%;
+}
+.two{
+    flex:5%;
+}
+.input:focus{
+    outline:none;
+}
+
+.click{
+    background:var(--Very-Dark-Gray);
+    padding:1.2em 1.1em;
+       border:none;
+       border-top-right-radius: 10px;;
+       border-bottom-right-radius: 10px;
+       cursor:pointer;
+}
+.click:hover{
+    background:hsl(0, 8%, 25%);
+}
+.location-info{
+    background:white;
+    border-radius:15px;
+    margin: 0 auto;
+    width:90%;
+    padding:1.5em 0em;
+    z-index: 500;
+    position: relative;
+}
+.name{
+    font-size:13px;
+    margin-bottom:0.5em;
+}
+.result{
+    font-weight:bold;
+    font-size:20px;
+}
+.address{
+    display:flex;
+    justify-content: center;
+}
+.location{
+    margin-bottom:1em;
+}
+#map {
+    height:100vh;
+    width: 100%;
+    position: relative;
+    bottom:18em;
+}
+@media only screen and (min-width:660px){ 
+
+    .input{
+        padding:1em;
+        font-size:1em;
+    }
+    form{
+        margin: 0 auto;
+        margin-bottom:2em;
+        width:40%;
+    }
+    .click{
+        padding:1.3em 1.2em;
+    }
+    .location-info{
+        width:75%;
+        margin: 0 auto;
+        padding:2em 1em 2em 0em;
+        display:flex;
+        justify-content:space-between;
+        justify-content: space-around;
+      
+    }
+   .name{
+        font-size:15px;
+       color:var(--Dark-Gray);
+         text-align: start;
+    }
+    .result{
+        font-weight:bold;
+        font-size:18px;
+        text-align: start;
+    }
+    .address{
+        display:block;
+    }
+    .location{
+        margin-bottom:0em;
+         padding-left:1em;
+         /* margin-left:-1em;  */
+        border-left: 1px solid var(--Very-Dark-Gray);
+        width: 25%;
+    }
+    .first{
+        border-left:none;  
+    }
+    #map {
+        height: 100vh;
+        width: 100%;
+        position: relative;
+        bottom:3.8em;
+    }
+}
+}
