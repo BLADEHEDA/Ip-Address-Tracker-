@@ -110,7 +110,8 @@ header{
     position: relative;
     bottom:18em;
 }
-@media only screen and (min-width:660px){ 
+
+@media only screen and (min-width:700px){ 
 
     .input{
         padding:1em;
@@ -119,13 +120,13 @@ header{
     form{
         margin: 0 auto;
         margin-bottom:2em;
-        width:40%;
+        width:50%;
     }
     .click{
         padding:1.3em 1.2em;
     }
     .location-info{
-        width:75%;
+        width:85%;
         margin: 0 auto;
         padding:2em 1em 2em 0em;
         display:flex;
@@ -143,24 +144,23 @@ header{
         font-size:18px;
         text-align: start;
     }
-    .address{
-        display:block;
-    }
+  
     .location{
         margin-bottom:0em;
          padding-left:1em;
-         /* margin-left:-1em;  */
+         margin-right:1em; 
         border-left: 1px solid var(--Very-Dark-Gray);
         width: 25%;
-    }
-    .first{
-        border-left:none;  
     }
     #map {
         height: 100vh;
         width: 100%;
         position: relative;
-        bottom:3.8em;
+        bottom:5em;
     }
-}
+    .first{
+        border-left:none;  
+    }
+
+}   
 }

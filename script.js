@@ -86,9 +86,9 @@ async function getip(e){
     }
 else{
     alert(" invalid ip address");
-    map.setView([data.latitude, data.longitude], 13);
-    marker.setLatLng([data.latitude, data.longitude]);
-    marker.bindPopup(`<b>${data.ip}</b>`).openPopup();
+    // map.setView([data.latitude, data.longitude], 13);
+    // marker.setLatLng([data.latitude, data.longitude]);
+    // marker.bindPopup(`<b>${data.ip}</b>`).openPopup();
 
     e.target.reset();
 }
