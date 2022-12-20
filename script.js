@@ -29,11 +29,31 @@ const locationIcon = L.icon({
 
 const marker = L.marker([0, 0], {icon: locationIcon}).addTo(map);
 
+// this function renders the initial data when thebuserbloads the pages which gives hin the initial data of his current location 
+async function getdefault (){
 
-// the line below handles the search functionaity of our app
+    let response = await fetch ('https://ipapi.co/json/');
+    let data = await response.json();  
+    console.log(data); 
+
+    isp.textContent= data.org;
+    ipaddress.textContent= data.ip;
+    city.textContent = data.city;
+    region.textContent= data.region;
+    country.textContent= data.country_name;
+    timevalue.textContent= data.utc_offset;
+
+    map.setView([data.latitude, data.longitude], 13);
+    marker.setLatLng([data.latitude, data.longitude]);
+    marker.bindPopup(`<b>${data.ip}</b>`).openPopup();
+}
+getdefault ()
+
+// this dusplays the user data and map bax=sed on the ipaddress he proc=vides in the form 
 form.addEventListener("submit", getip);
 
 async function getip(e){
+
     e.preventDefault();
 
     try{   
